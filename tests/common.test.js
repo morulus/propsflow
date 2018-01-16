@@ -47,4 +47,19 @@ describe('common', () => {
       D: 14
     });
   });
+
+  it('Proxy next if equals (mutable)', () => {
+    const target = {
+      a: 123,
+    }
+
+    const enhancer = propsflow(
+      (target) => {
+        target.b = 456;
+        return target;
+      }
+    )
+
+    expect(enhancer(target)).toBe(target);
+  });
 })
