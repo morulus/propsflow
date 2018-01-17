@@ -1,4 +1,4 @@
-const factory = require('extraflow/factory');
+var factory = require('extraflow/factory');
 
 module.exports = factory(function(prev, next) {
   if (typeof next === 'object' && next !== prev) {
