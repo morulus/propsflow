@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/morulus/propsflow#readme",
   "dependencies": {
-    "extraflow": "^1.0.0"
+    "extraflow": "^1.0.1"
   },
   "devDependencies": {
     "jest": "^22.1.1"
